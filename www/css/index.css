@@ -76,23 +76,49 @@ img.center {
 
 div {
     text-align: center;
-    padding-top: 250px;
 }
 
-.navigation {
+.navigation, #sub-navigation1, #sub-navigation2, #sub-navigation3 {
     position: fixed; 
     bottom: 0; 
     width: 100%; 
     text-align: center;
+    border: 1px solid #FFF;
 }
 
-button {
-    height: 50px;
-    width: 33%;
+#sub-navigation1, #sub-navigation2, #sub-navigation3 {
+    padding-bottom: 70px;
+    background-color: #38617D;
+    text-align: left;
+    display: none;
+
+}
+
+button, .sub-button1, .sub-button2, .sub-button3 {
+    height: 70px;
+    width: 33.32%;
     background-color: #3A3A3A;
-    border: 1px solid #FFF;
+    border: 0px;
+    border-right: 1px solid #FFF;
     color: #FFF;
     font-size: 18px;
+    display: block;
+    float: left;
+}
+
+.sub-button1 {
+    width: 16.66%;
+    background-color: #38617D;
+}
+
+.sub-button2 {
+    width: 12.491%;
+    background-color: #38617D;
+}
+
+.sub-button3 {
+    width: 16.66%;
+    background-color: #38617D;
 }
     
 h1 {
