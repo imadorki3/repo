@@ -17,27 +17,50 @@
  * under the License.
  */
 
-document.getElementById('button1').onclick = function() {
-	    if (window.getComputedStyle(button1).backgroundColor == "rgb(58, 58, 58)") {
-	    	button1.style.backgroundColor="#3198DA";
-	    	button2.style.backgroundColor="#3A3A3A";
-	    	button3.style.backgroundColor="#3A3A3A";
+$(document).ready(function(){
+  $("#button1").click(function(){
+	  if (window.getComputedStyle(button1).backgroundColor == "rgb(58, 58, 58)") {
+    $(this).css({
+		backgroundColor: '#3198DA'
+		});
+	$("#button2").css({
+	  	backgroundColor: '#3A3A3A'
+  		});
+    $("#button3").css({
+		backgroundColor: '#3A3A3A'
+  		});
 	}
-}
+  });
 
-document.getElementById('button2').onclick = function() {
-	    if (window.getComputedStyle(button2).backgroundColor == "rgb(58, 58, 58)") {
-			button1.style.backgroundColor="#3A3A3A";
-			button2.style.backgroundColor="#3198DA";
-			button3.style.backgroundColor="#3A3A3A";
+  $("#button2").click(function(){
+	  if (window.getComputedStyle(button2).backgroundColor == "rgb(58, 58, 58)") {
+    $(this).css({
+		backgroundColor: '#3198DA'
+		});
+	$("#button1").css({
+	  	backgroundColor: '#3A3A3A'
+  		});
+    $("#button3").css({
+		backgroundColor: '#3A3A3A'
+  		});
 	}
-}
+  });
 
-document.getElementById('button3').onclick = function() {
-	    if (window.getComputedStyle(button3).backgroundColor == "rgb(58, 58, 58)") {
-			button1.style.backgroundColor="#3A3A3A";
-			button2.style.backgroundColor="#3A3A3A";
-			button3.style.backgroundColor="#3198DA";
-	}
-}
+    $("#button3").click(function(){
+  	  if (window.getComputedStyle(button3).backgroundColor == "rgb(58, 58, 58)") {
+      $(this).css({
+  		backgroundColor: '#3198DA'
+  		});
+  	$("#button1").css({
+  	  	backgroundColor: '#3A3A3A'
+    		});
+      $("#button2").css({
+  		backgroundColor: '#3A3A3A'
+    		});
+  	}
+  });
+
+});
+
+
 
